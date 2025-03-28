@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  touch-action: none;
+
+    overflow-y: auto; /* Permite rolagem vertical */
+    overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
+    height: 100vh; /* Define a altura total da tela */
+
+
+  background-image: linear-gradient(
+    0deg,
+    rgb(85, 85, 85),
+    rgb(46, 46, 46)
+  );
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(78, 78, 78);
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}
+
+.IMAGEN-LOGO {
+  width: 170px;
+  height: 170px;
+  background-color: rgba(255, 255, 255, 0.212);
+  border: 2px rgb(206, 206, 206);
+  border-radius: 100%;
+  border-style: solid;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.281);
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 230px;
+  height: 50px;
+  border-radius: 20px;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Name {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  margin: 9px;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}
+
+/*Animações*/
+@keyframes flutuar {
+  0% {
+    top: 15%;
+  }
+  100% {
+    top: 17%;
+  }
+}
