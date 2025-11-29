@@ -7,15 +7,14 @@
 body {
   touch-action: none;
 
-    overflow-y: auto; /* Permite rolagem vertical */
-    overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
-    height: 100vh; /* Define a altura total da tela */
-
+  overflow-y: auto; /* Permite rolagem vertical */
+  overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
+  height: 100vh; /* Define a altura total da tela */
 
   background-image: linear-gradient(
     0deg,
-    rgb(85, 85, 85),
-    rgb(46, 46, 46)
+    rgba(0, 144, 201, 0.274),
+    rgba(67, 255, 29, 0.493)
   );
   background-attachment: fixed;
 }
@@ -29,7 +28,7 @@ body {
 
 .footer {
   display: flex;
-  background-color: rgb(78, 78, 78);
+  background-color: rgba(0, 0, 0, 0.137);
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -42,15 +41,13 @@ body {
   width: 170px;
   height: 170px;
   background-color: rgba(255, 255, 255, 0.212);
-  border: 2px rgb(206, 206, 206);
   border-radius: 100%;
-  border-style: solid;
   position: absolute;
   top: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.281);
-  animation: flutuar 2s ease-in-out infinite alternate;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.349);
+  animation: flutuar 3s ease-in-out infinite alternate;
 }
 
 .box1 {
@@ -67,14 +64,15 @@ body {
 }
 
 .Name {
-  color: white;
+  color: rgb(0, 0, 0);
   position: fixed;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: none;
+  box-shadow: 0px 10px 10px -10px rgba(83, 83, 83, 0.486);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
 }
 
 .social-media {
@@ -101,5 +99,12 @@ body {
   }
   100% {
     top: 17%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .IMAGEN-LOGO {
+    width: 120px;
+    height: 120px;
   }
 }

@@ -2,7 +2,8 @@
   display: flex;
   overflow: hidden;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.349);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.349);
   border-radius: 30px;
   position: absolute;
   top: 60%;
@@ -10,7 +11,7 @@
   transform: translate(-50%, -50%); /* Centraliza corretamente */
   flex-direction: column;
   width: 390px;
-  height: 600px;
+  height: 250px;
   gap: 30px;
   justify-content: center;
   align-items: center; /* Centraliza os itens horizontalmente */
@@ -21,17 +22,18 @@
   align-items: center;
   background-color: rgb(255, 255, 255);
   justify-content: center;
-  width: 350px;
+  width: 340px;
   height: 75px;
   border-radius: 10px;
-  box-shadow: 6px 6px 0px 0px rgb(0, 0, 0);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.349);
   position: relative; /* Alterado de absolute para relative */
-  transition: ease-in-out 0.3s;
+  transition: ease-in 0.3s;
 }
 
 .DivProduto:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(5deg);
 }
+
 
 .DivProduto img {
   width: 65px;
@@ -57,4 +59,22 @@
 
 .DivProduto a {
   color: black;
+}
+
+@media screen and (max-width: 320px) {
+  .lista {
+    width: 250px;
+    height: 240px;
+  }
+  .DivProduto {
+    width: 200px;
+    height: 70px;
+  }
+  .DivProduto h2 {
+    font-size: 15px;
+    width: 15px;
+  }
+  .DivProduto img {
+    left: 26%;
+  }
 }
