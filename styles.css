@@ -86,12 +86,15 @@ body {
   transition: transform 0.5s ease;
   cursor: pointer;
   margin: 9px;
+  text-decoration: none;
 }
 
 .social-media img:hover {
   transform: scale(1.05) rotate(5deg);
 }
-
+.social-media img:focus{
+  outline: none;
+}
 /*Animações*/
 @keyframes flutuar {
   0% {
