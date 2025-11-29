@@ -92,7 +92,7 @@ body {
 .social-media img:hover {
   transform: scale(1.05) rotate(5deg);
 }
-.social-media img:focus{
+a:focus{
   outline: none;
 }
 /*Animações*/
