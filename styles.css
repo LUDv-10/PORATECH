@@ -6,17 +6,19 @@
 
 body {
   touch-action: none;
-
   overflow-y: auto; /* Permite rolagem vertical */
   overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
   height: 100vh; /* Define a altura total da tela */
+  background-image: url("fotos/P-aa.png");
+  background-color: rgba(204, 173, 0, 0.445);
+  background-size: 300px;
+  background-repeat: repeat;
+  animation: andar 10s linear infinite;
+}
 
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 144, 201, 0.274),
-    rgba(67, 255, 29, 0.493)
-  );
-  background-attachment: fixed;
+@keyframes andar {
+  from { background-position-x: 0; }
+  to   { background-position-x: 100%; }
 }
 
 .container {
