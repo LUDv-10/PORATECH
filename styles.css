@@ -9,8 +9,9 @@ body {
   overflow-y: auto; /* Permite rolagem vertical */
   overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
   height: 100vh; /* Define a altura total da tela */
-  background-image: url("fotos/P-aa.png");
+  background-image: url("fotos/P-aa2.png");
   background-color: rgba(204, 173, 0, 0.445);
+  background-position: 10px;
   background-size: 300px;
   background-repeat: repeat;
   animation: andar 10s linear infinite;
@@ -83,16 +84,17 @@ body {
 }
 
 .social-media img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.5s ease;
   cursor: pointer;
   margin: 9px;
+  margin-top: 13px;
   text-decoration: none;
 }
 
 .social-media img:hover {
-  transform: scale(1.05) rotate(5deg);
+  transform: scale(1.20) rotate(5deg);
 }
 
 

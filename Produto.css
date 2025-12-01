@@ -2,8 +2,8 @@
   display: flex;
   overflow: hidden;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.349);
-  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.349);
+  background-color: rgba(255, 255, 255, 0.521);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.452);
   border-radius: 30px;
   position: absolute;
   top: 60%;
@@ -25,7 +25,7 @@
   width: 340px;
   height: 75px;
   border-radius: 10px;
-  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.349);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.562);
   position: relative; /* Alterado de absolute para relative */
   transition: ease-in 0.2s;
 }
